@@ -30,7 +30,7 @@ class TextAnalysis:
 
     @staticmethod
     def get_frequency_by_list(words_list: list) -> dict:
-        words_list = [word.strip() for word in words_list]
+        words_list = [word.strip() for word in words_list if word.strip() != ""]
 
         # stop-words filter
         stop_words = stopwords.words('English')
